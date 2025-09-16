@@ -1,0 +1,33 @@
+/* Part 1: CSS Transitions and Keyframe Animations */
+
+/* Box style */
+#box {
+  width: 150px;
+  height: 150px;
+  background-color: teal;
+  margin-top: 20px;
+  transition: transform 0.5s ease;
+}
+
+/* Animate class triggers a keyframe animation */
+.animate {
+  animation: slideAndSpin 2s forwards;
+}
+
+/* Keyframe animation */
+@keyframes slideAndSpin {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  100% {
+    transform: translateX(300px) rotate(360deg);
+  }
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #0077cc;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
